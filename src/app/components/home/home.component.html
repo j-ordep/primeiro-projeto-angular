@@ -1,0 +1,37 @@
+<p>Oi {{ name }}, isso aq esta no HTML de home</p>
+
+
+<h1>
+	<!-- recebe o valor do input e exibe ele ( aqui é a saída, mostra a informação ) -->
+	{{ minhaPropsDeFora }}
+</h1>
+
+
+
+<button (click)="submit()">Seu botão</button> <!-- para acessar o atributo ( attr. )-->
+
+
+
+
+
+<!-- Condicionais -->
+@if (mostrarTitulo) {
+
+	<h1>meu titulo</h1>
+
+} @else if (name == "Juliana") {
+
+	<h1> {{name}} eu te amo</h1>
+
+} @else {
+
+	<h1>Não foi verdadeiro</h1>
+
+}
+
+<!-- Loops -->
+@for (item of listItems; track item) {
+	<p>{{ item }}</p>
+}
+
+
